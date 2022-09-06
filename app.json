@@ -1,7 +1,7 @@
 {
   "name": "Roll Bot",
   "description": "Basic Groupme Roll Bot written in Node",
-  "repository": "https://github.com/seckela/groupme-roll-bot",
+  "repository": "https://github.com/hwangeug/groupme-roll-bot",
   "logo": "http://mikhailthomas.com/img/d20.png",
   "keywords": []
 }

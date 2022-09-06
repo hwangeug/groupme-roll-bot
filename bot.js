@@ -57,14 +57,17 @@ if(!command.text.split(' ')[1]){
 
 function roll(count, min, max){
   var result = 0;
-  if(count === 1){
-    result = min + Math.floor(Math.random()*(max-min+1));
-  } else {
-    for(i = 0; i < count; i++){
-      result = result + (min + Math.floor(Math.random()*(max-min+1)));
-    }
+  var individualDice = [];
+  
+  for(i = 0; i < count; i++){
+    diceResult = Math.floor(Math.random()*(max-min+1));
+    individualDice.push(diceResult);
+    result = result + (min + diceResult);
   }
-  return result;
+
+  message = result + ' (individual die results: ' + individualDice.join(', ') + ')';
+
+  return message;
 }
 
 function postMessage(message, name, id) {
