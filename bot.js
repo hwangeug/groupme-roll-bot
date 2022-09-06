@@ -60,7 +60,7 @@ function roll(count, min, max){
   var individualDice = [];
   
   for(i = 0; i < count; i++){
-    diceResult = Math.floor(Math.random()*(max-min+1));
+    diceResult = Math.ceil(Math.random()*(max-min+1));
     individualDice.push(diceResult);
     result = result + (min + diceResult);
   }
