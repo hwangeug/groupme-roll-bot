@@ -1,5 +1,7 @@
 # Roll Bot for GroupMe
 
+**ARCHIVED DUE TO HEROKU CHANGES**
+
 ## Introduction
 
 This bot is used for standard
